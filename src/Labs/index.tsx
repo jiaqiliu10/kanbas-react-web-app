@@ -4,10 +4,12 @@ import { Route, Routes, Navigate } from "react-router";
 import TOC from "./TOC";
 import Lab2 from "./Lab2";
 import Lab3 from "./Lab3";
+import React from 'react';
 
 export default function Labs() {
     return (
-        <div id="wd-labs">
+        <div>
+            <h1>Jiaqi Liu</h1>
             <h1>Labs</h1>
             <TOC />
             <Routes>
