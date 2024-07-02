@@ -6,6 +6,7 @@ import Lab2 from "./Lab2";
 import Lab3 from "./Lab3";
 import React from 'react';
 
+
 export default function Labs() {
     return (
         <div>
