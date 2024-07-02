@@ -10,7 +10,7 @@ import React from 'react';
 export default function Labs() {
     return (
         <div>
-            <h1>Jiaqi Liu</h1>
+            <h1>Jiaqi Liu Summer2</h1>
             <h1>Labs</h1>
             <TOC />
             <Routes>
