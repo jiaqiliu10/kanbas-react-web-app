@@ -1,0 +1,51 @@
+.button_style{
+    box-sizing: border-box;
+    border: 2px solid gainsboro;
+    padding: 2px;
+    border-Radius: 8px;
+    text-align: center;
+    height: 40px;
+    background: gainsboro;
+
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+    width: 60%;
+}
+
+.search-icon3 {
+  position: absolute;
+    top: 70%;
+    left:3%;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+
+.search-icon2 {
+  position: absolute;
+    top: 70%;
+    left: 78%;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+
+.search-input::placeholder {
+  color: #6c757d;
+}
+
+.table-responsive {
+    margin-top: 20px;
+}
+
+.table-bordered th, .table-bordered td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table .form-control {
+    width: auto;
+    display: inline-block;
+    text-align: center;
+}
