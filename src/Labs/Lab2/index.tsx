@@ -243,7 +243,8 @@ export default function Lab2() {
                       Red
                   </div>
                   <img className="wd-float-right"
-                       src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"/>
+                       src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"
+                       alt=""/>
                   <div className="wd-float-done"></div>
               </div>
           </div>
@@ -706,8 +707,8 @@ export default function Lab2() {
               <h2>Cards</h2>
               <div className="card"
                    style={{width: "18rem"}}>
-                  <img src="images/stacked.jpg"
-                       className="card-img-top"/>
+                  <img src="/images/stacked.jpg"
+                       className="card-img-top" alt=""/>
                   <div className="card-body">
                       <h5 className="card-title">
                           Stacking Starship
