@@ -13,7 +13,6 @@ body * {
   }
 }
 
-/* 导航栏样式 */
 #wd-kanbas-navigation {
   width: 120px;
   position: fixed;
@@ -23,7 +22,6 @@ body * {
   z-index: 2;
 }
 
-/* 导航栏链接样式 */
 #wd-kanbas-navigation .list-group-item {
   color: white;
   background-color: black;
@@ -45,7 +43,6 @@ body * {
   color: red;
 }
 
-/* 课程卡片样式 */
 .wd-dashboard-course .card {
   width: 250px;
   height: 350px;
@@ -83,12 +80,10 @@ body * {
   align-self: flex-end;
 }
 
-/* 页面标题和副标题样式 */
 #wd-dashboard-title, #wd-dashboard-published {
   margin-left: 15px;
 }
 
-/* 列表项目样式 */
 .list-group-item {
   border-left: 3px solid green;
   padding: 15px;
@@ -102,7 +97,6 @@ body * {
   color: #6c757d;
 }
 
-/* 搜索框样式 */
 .input-group-text {
   background-color: #f8f9fa;
   border: 1px solid #ced4da;

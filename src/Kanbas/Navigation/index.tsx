@@ -19,7 +19,7 @@ export default function KanbasNavigation() {
         <AiOutlineDashboard className="fs-1 text-danger" /><br />
         Dashboard
       </a>
-      <a id="wd-course-link" href="#/Kanbas/Courses" className="list-group-item text-white bg-black text-center border-0">
+      <a id="wd-course-link" href="#/Kanbas/Courses"  className="list-group-item text-white bg-black text-center border-0">
         <LiaBookSolid className="fs-1 text-danger" /><br />
         Courses
       </a>
