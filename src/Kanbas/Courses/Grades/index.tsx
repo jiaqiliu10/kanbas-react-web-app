@@ -5,8 +5,14 @@ import { CiSettings } from "react-icons/ci";
 import "./index.css";
 import {HiMiniMagnifyingGlass} from "react-icons/hi2";
 import { IoFunnelOutline } from "react-icons/io5";
+import {grades, enrollments, users} from '../../Database'
+import { useParams} from "react-router-dom";
 
 export default function Grades() {
+    const {cid} = useParams()
+    const entrolled_stu = enrollments.filter((enroll) => enroll.course === cid)
+
+
     return (
         <div id={"wd-grades-editor"} >
             <div id={"function_btn"} className={"d-flex mb-3 justify-content-end"}>
@@ -57,58 +63,29 @@ export default function Grades() {
                 <table className="table table-bordered">
                     <thead>
                     <tr className={"table-secondary"}>
-                        <th>Student Name</th>
-                        <th>A1 SETUP</th>
-                        <th>A2 HTML</th>
-                        <th>A3 CSS</th>
-                        <th>A4 BOOTSTRAP</th>
+                        <th> ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Grades</th>
+                        <th>Email</th>
+                        <th>Date of Birth</th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr >
-                        <td className="text-danger">Jane Adams</td>
-                        <td>100%</td>
-                        <td>96.67%</td>
-                        <td>92.18%</td>
-                        <td>66.22%</td>
-                    </tr>
-                    <tr className={"table-secondary"}>
-                        <td className="text-danger ">Christina Allen</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                    </tr>
-                    <tr >
-                        <td className="text-danger">Samreen Ansari</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                    </tr>
-                    <tr className={"table-secondary "}>
-                        <td className={"text-danger"}>Han Bao</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>
-                            <input type="text" value="88.03%" className="form-control"/>
-                        </td>
-                        <td>98.99%</td>
-                    </tr>
-                    <tr>
-                        <td className="text-danger">Mahi Sai Srinivas Bobbili</td>
-                        <td>100%</td>
-                        <td>96.67%</td>
-                        <td>98.37%</td>
-                        <td>100%</td>
-                    </tr>
-                    <tr className={"table-secondary"}>
-                        <td className="text-danger">Siran Cao</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                    </tr>
+                    {entrolled_stu.map((enroll => {
+                            const user = users.find(user => user._id === enroll.user)
+                            const grade = grades.find(stu => stu.student === enroll.user)
+                                return (
+                                    <tr>
+                                        <td> {enroll.user} </td>
+                                        <td className="text-danger">{`${user && user.firstName}`}</td>
+                                        <td className="text-danger">{`${user && user.lastName}`}</td>
+                                        <td>{`${grade && grade.grade}`}</td>
+                                        <td>{`${user && user.email}`}</td>
+                                        <td>{`${user && user.dob}`}</td>
+                                    </tr>
+                                );
+                    }))}
                     </tbody>
                 </table>
             </div>

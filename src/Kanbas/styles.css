@@ -1,103 +1,15 @@
-body {
-  margin: 0;
-  padding: 0;
-}
+body   {  margin: 0;  padding: 0;  }
+body * {  font-family: Arial, Helvetica, sans-serif;  }
 
-body * {
-  font-family: Arial, Helvetica, sans-serif;
+.btn-secondary {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #c7cdd1;
+  --bs-btn-border-color: #c7cdd1;
+  --bs-btn-hover-color: #fff;
 }
-
-@media (min-width: 768px) {
-  #wd-kanbas .wd-main-content-offset {
-    padding-left: 140px !important;
-  }
+.bg-secondary {
+  background-color: #c7cdd1 !important;
 }
-
-#wd-kanbas-navigation {
-  width: 120px;
-  position: fixed;
-  bottom: 0;
-  top: 0;
-  background-color: black;
-  z-index: 2;
-}
-
-#wd-kanbas-navigation .list-group-item {
-  color: white;
-  background-color: black;
-  border: none;
-  text-align: center;
-}
-
-#wd-kanbas-navigation .list-group-item img {
-  display: block;
-  margin: 0 auto;
-}
-
-#wd-kanbas-navigation .list-group-item.active {
-  background-color: white;
-  color: red;
-}
-
-#wd-kanbas-navigation .list-group-item.active .fs-1 {
-  color: red;
-}
-
-.wd-dashboard-course .card {
-  width: 250px;
-  height: 350px;
-  margin: 15px;
-  display: flex;
-  flex-direction: column;
-}
-
-.wd-dashboard-course img {
-  width: 100%;
-  height: auto;
-  max-height: 150px;
-  object-fit: cover;
-}
-
-.wd-dashboard-course .card-body {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.wd-dashboard-course .card-title {
-  font-size: 1.25rem;
-  margin-bottom: 0.75rem;
-}
-
-.wd-dashboard-course .card-text {
-  font-size: 1rem;
-  color: #6c757d;
-}
-
-.wd-dashboard-course .btn {
-  margin-top: 10px;
-  align-self: flex-end;
-}
-
-#wd-dashboard-title, #wd-dashboard-published {
-  margin-left: 15px;
-}
-
-.list-group-item {
-  border-left: 3px solid green;
-  padding: 15px;
-}
-
-.list-group-item h5 {
-  margin-bottom: 5px;
-}
-
-.list-group-item small {
-  color: #6c757d;
-}
-
-.input-group-text {
-  background-color: #f8f9fa;
-  border: 1px solid #ced4da;
+.border-gray {
+  border: 1px solid gray;
 }
