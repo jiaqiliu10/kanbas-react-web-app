@@ -10,6 +10,7 @@ export default function ModulesControls() {
             <div className="dropdown d-inline me-1 float-end">
                 <button id="wd-publish-all-btn" className="btn btn-lg btn-secondary dropdown-toggle"
                         type="button" data-bs-toggle="dropdown">
+
                     <GreenCheckmark/>
                     Publish All
                 </button>
