@@ -28,11 +28,13 @@ export default function ModulesControls() {
                     </li>
                     <li>
                         <a id="wd-unpublish-all-modules-and-items" className="dropdown-item" href="#">
+                            <GreenCheckmark/>
                             Unpublish all modules and items
                         </a>
                     </li>
                     <li>
                         <a id='wd-unpublish-modules-only' className='dropdown-item' href='#'>
+                            <GreenCheckmark/>
                             Unpublish modules only
                         </a>
                     </li>
