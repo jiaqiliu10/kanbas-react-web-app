@@ -6,3 +6,11 @@
 .dropdown-item .fa {
     margin-right: 8px;
 }
+
+.wd-module .wd-lesson {
+    border-left: 4px solid green;
+}
+
+.wd-module .wd-title {
+    border-left: none;
+}

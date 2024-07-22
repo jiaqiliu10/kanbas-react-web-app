@@ -5,6 +5,8 @@ import ModuleControlButtons from "./ModuleControlButtons";
 import {Link, useLocation, useParams} from "react-router-dom";
 import {modules} from "../../Database";
 import React from 'react';
+import '../../styles.css';
+
 
 export default function Modules() {
     const {cid} = useParams()
