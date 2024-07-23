@@ -1,4 +1,5 @@
-import {FaPlus} from "react-icons/fa6";
+import React from 'react';
+import { FaPlus, FaBan } from 'react-icons/fa6';
 import GreenCheckmark from "./GreenCheckmark";
 import ModuleEditor from "./ModuleEditor";
 
@@ -32,19 +33,16 @@ export default function ModulesControls({ moduleName, setModuleName, addModule }
                     </li>
                     <li>
                         <a id="wd-unpublish-all-modules-and-items" className="dropdown-item" href="#">
-                            <GreenCheckmark/>
+                            <FaBan className="text-secondary me-2" />
                             Unpublish all modules and items
                         </a>
                     </li>
                     <li>
                         <a id='wd-unpublish-modules-only' className='dropdown-item' href='#'>
-                            <GreenCheckmark/>
+                            <FaBan className="text-secondary me-2" />
                             Unpublish modules only
                         </a>
                     </li>
-                    {/* Create two more items with IDs wd-unpublish-all-modules-and-items and
-              wd-unpublish-modules-only with labels Unpublish all modules and items
-              and Unpublish modules only */}
                 </ul>
             </div>
             <button id='wd-view-progress' className="btn btn-lg btn-secondary me-1 float-end">
@@ -55,7 +53,6 @@ export default function ModulesControls({ moduleName, setModuleName, addModule }
             </button>
             <ModuleEditor dialogTitle="Add Module" moduleName={moduleName}
                     setModuleName={setModuleName} addModule={addModule} />
-
         </div>
     );
 }

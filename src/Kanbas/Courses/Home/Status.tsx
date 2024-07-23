@@ -3,7 +3,7 @@ import {FaBell, FaBook, FaChartBar, FaCheckCircle, FaHome} from "react-icons/fa"
 import { BiImport } from "react-icons/bi";
 import { LiaFileImportSolid } from "react-icons/lia";
 import {CiBullhorn} from "react-icons/ci";
-{/* Find more icons */}
+
 export default function CourseStatus() {
   return (
     <div id="wd-course-status" style={{ width: "300px" }}>

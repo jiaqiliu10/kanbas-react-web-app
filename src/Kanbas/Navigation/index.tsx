@@ -8,6 +8,7 @@ import { LiaCogSolid } from "react-icons/lia";
 import './index.css';
 import { Route } from "react-router-dom";
 
+
 export default function KanbasNavigation() {
     const { pathname } = useLocation();
     const links = [
@@ -17,6 +18,7 @@ export default function KanbasNavigation() {
         { label: "Inbox", path: "/Kanbas/Inbox", icon: FaInbox },
         { label: "Labs", path: "/Labs", icon: LiaCogSolid },
     ];
+
 
     return (
         <div id="wd-kanbas navigation" className="list-group rounded-0">
@@ -69,4 +71,3 @@ export default function KanbasNavigation() {
         </div>
     );
 }
-

@@ -1,5 +1,11 @@
-body   {  margin: 0;  padding: 0;  }
-body * {  font-family: Arial, Helvetica, sans-serif;  }
+html, body, #root, .App, #wd-kanbas {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body * {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 .btn-secondary {
   --bs-btn-color: #000;
@@ -7,9 +13,68 @@ body * {  font-family: Arial, Helvetica, sans-serif;  }
   --bs-btn-border-color: #c7cdd1;
   --bs-btn-hover-color: #fff;
 }
+
 .bg-secondary {
   background-color: #c7cdd1 !important;
 }
+
 .border-gray {
   border: 1px solid gray;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .sidebar.open {
+    display: block;
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    background-color: black;
+    z-index: 1000;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
+
+.toggle-button {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 2000;
+}
+
+@media (max-width: 768px) {
+  .toggle-button {
+    display: block;
+  }
+
+  .sidebar + .content {
+    margin-left: 250px;
+    transition: margin-left 0.3s;
+  }
+
+  .content.full-width {
+    margin-left: 0;
+  }
+}
+
+.d-flex {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  height: 100%;
+  background-color: black;
+}
+
+.flex-fill {
+  flex: 1;
+  overflow: auto;
 }
