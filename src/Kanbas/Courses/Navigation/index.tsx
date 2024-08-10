@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function CoursesNavigation({ courseId }: { courseId: string | undefined }) {
     const [isSidebarVisible, setSidebarVisible] = useState(true);
-    const links = ["Home", "Modules", "Piazza", "Zoom", "Assignments", "Quizzes", "Grades"];
+    const links = ["Home", "Modules", "Piazza", "Zoom", "Assignments", "Quizzes", "Grades", "People"];
     const { pathname } = useLocation();
 
     return (
